@@ -1,0 +1,49 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#aboutme{
+    display: inline-block;
+
+}
+
+#myimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#nbar{
+    color:white;
+}
+#abouttext{
+    font-size: 14px;
+}
+
+#tabtitle{
+    font-size:20px;
+}
+
+#company{
+    font-size: 14px;
+}
+
+#jobposition{
+    font-size: 15px;
+}
+
+#years{
+    font-size: 12px;
+}
+
+
+#projimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
