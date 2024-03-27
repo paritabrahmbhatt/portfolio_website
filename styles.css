@@ -1,51 +1,274 @@
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+/* styles.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#aboutme{
-    display: inline-block;
+.text-primary {
+    color: #F56600 !important; }  
 
-}
 
-#myimg{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-#nbar{
-    color:white;
-}
-#abouttext{
-    font-size: 14px;
-}
 
-#tabtitle{
-    font-size:20px;
-}
+      
+ul {
+    padding-left: 20px; }
 
-#company{
-    font-size: 14px;
-}
 
-#jobposition{
-    font-size: 15px;
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 54px;
+    padding-left: 0; /* Reset left padding */
+    padding-right: 0;
+    position: relative;
+    color: #495057; 
 }
 
-#years{
-    font-size: 12px;
+::selection {
+    background: pink; }
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  color: #F56600; }
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 120px;
 }
 
+h1 {
+    font-size: 5.5rem;
+    line-height: 4rem; }
+  
+  h2 {
+    font-size: 3rem; }
+  
+  h3 {
+    font-size: 1.5rem; }
+  
+  h5 {
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40; }
+
+.container-fluid, .row, .col-md-3, .col-lg-2 {
+    height: 100%;
+    
+}
+
+.main-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Adjusting the sidebar styles */
+.sidebar-sticky {
+    background-color: #F56600 !important; /* Change background color of the sidebar */
+    color: #fff;
+    /*padding-top: 50px; /* Add padding to the top of the sidebar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* This line centers the content vertically */
+    align-items: center;
+    height: 100%;
+    position: sticky;
+    /*margin-top: auto; /* Adjust the top position of the sticky sidebar */
+    /*top: 120px; /* Adjust the top position of the sticky sidebar */
+    width: 100%;
+}
+
+.active {
+    color: #fff; /* Change color to white or brighter color */
+    font-weight: bold; /* Optionally, you can add other styles */
+}
+
+.nav-link {
+    color: #FFFF; /* Change the color of the links in the sidebar */
+    padding: 10px 20px; /* Add padding to the links */
+    transition: color 0.3s ease; /* Add transition effect */
+}
+
+.nav-link:hover {
+    color: #fff !important; /* Change color on hover */
+    font-size: 1.1em; 
+    font-weight: bold;
+}
+
+.nav-link.active {
+    color: #ffff;
+    font-size: 1.1em; 
+    font-weight: bold;
+}
+
+.nbar-back {
+    background-color: #F56600;
+}
+
+.custom-bg-color {
+    background-color: #522D80;
+}
+.navbar {
+    border: 2px solid #F56600 !important; 
+    
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.img-profile {
+    width: 190px; /* Adjust the width as needed */
+    height: 190px; /* Adjust the height as needed */
+}
+
+/* Add a border of a lighter color */
+.img-profile {
+    border: 5px solid #FCEAC7; /* Lighter color border */
+}
+
+/* Adjust form input fields width */
+.form-floating input,
+.form-floating textarea {
+    width: 100%;
+}
+
+/* Optional: Adjust label position for smaller screens */
+@media (max-width: 576px) {
+    .form-floating label {
+        position: static;
+        font-size: 0.875rem;
+    }
+}
+
+/* Center-align the text within the p element with class 'text-muted' */
+.text-muted.center {
+    color: #F56600;
+    text-align: center;
+}
+
+#CUOrange{
+    color: #F56600;
+}
+
+#footer_bg{
+    background-color: #F56600 !important;
+    width:100%
+}
+
+#btn_hover:hover{
+    background-color: #F56600;
+}
 
 #projimg{
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    
 }
 
 
-#foottext{
-    font-size: 12px;
+#CUPurple{
+    color: #522D80 !important;
+} 
+
+#special-button:hover{
+    background-color:#F56600;
 }
+
+a {
+    color: #F56600; }
+    a:hover, a:focus{
+        color: #D84D00;; }
+    a.active{
+        color:#fff;
+        font-size: 1.1em; 
+        font-weight: bold;}
+
+.list-social-icons a {
+    color: #495057; }
+    .list-social-icons a:hover {
+      color: #F56600; }
+    .list-social-icons a .fa-lg {
+      font-size: 1.75rem; }
+      .list-icons {
+        font-size: 3rem; }
+        .list-icons .list-inline-item i:hover {
+          color: #F56600; }
+      
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 700;
+    letter-spacing: 0.05rem;}
+    .img-place {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 10; }
+      
+      .img-place > img {
+        width: 100%;
+        height: auto; }
+  
+  @media (min-width: 992px) {
+    #sideNav {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      width: 17rem;
+      height: 100vh; }
+      #sideNav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem; }
+        #sideNav .navbar-brand .img-profile {
+          max-width: 14rem;
+          max-height: 14rem;
+          border: 0.5rem solid #522D80; }
+      #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;}
+        .nav-link.active {
+            color: #ffff;
+            font-size: 1.1em; 
+            font-weight: bold;
+        }
+}
+        #sideNav .navbar-collapse .navbar-nav {
+          flex-direction: column;
+          width: 100%; }
+          #sideNav .navbar-collapse .navbar-nav .nav-item {
+            display: block; }
+            #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+              display: block; } 
+
+
+section.resume-section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important; 
+    margin-top:80px;
+}
+    section.resume-section .resume-item .resume-date {
+    min-width: none; }
+
+    
