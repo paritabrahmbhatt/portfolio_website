@@ -94,15 +94,13 @@ h1 {
     width: 100%;
 }
 
-.active {
-    color: #fff; /* Change color to white or brighter color */
-    font-weight: bold; /* Optionally, you can add other styles */
-}
+
 
 .nav-link {
     color: #FFFF; /* Change the color of the links in the sidebar */
     padding: 10px 20px; /* Add padding to the links */
     transition: color 0.3s ease; /* Add transition effect */
+    font-weight: bold; /* Optionally, you can add other styles */
 }
 
 .nav-link:hover {
@@ -111,22 +109,16 @@ h1 {
     font-weight: bold;
 }
 
-.nav-link.active {
-    color: #ffff;
+.nav-link:active {
+    color: #ffffff !important;
     font-size: 1.1em; 
     font-weight: bold;
 }
 
-.nbar-back {
-    background-color: #F56600;
-}
 
-.custom-bg-color {
-    background-color: #522D80;
-}
 .navbar {
-    border: 2px solid #F56600 !important; 
     
+    border: 2px solid #F56600 !important; 
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -134,11 +126,7 @@ h1 {
 .img-profile {
     width: 190px; /* Adjust the width as needed */
     height: 190px; /* Adjust the height as needed */
-}
-
-/* Add a border of a lighter color */
-.img-profile {
-    border: 5px solid #FCEAC7; /* Lighter color border */
+    border: 5px solid rgba(255, 255, 255, 0.2) ; /* Lighter color border */
 }
 
 /* Adjust form input fields width */
@@ -186,12 +174,13 @@ h1 {
 } 
 
 #special-button:hover{
+    /*For Download Resume Button */
     background-color:#F56600;
 }
 
 a {
     color: #F56600; }
-    a:hover, a:focus{
+    a:hover{
         color: #D84D00;; }
     a.active{
         color:#fff;
@@ -268,7 +257,22 @@ section.resume-section {
     padding-bottom: 5rem !important; 
     margin-top:80px;
 }
-    section.resume-section .resume-item .resume-date {
-    min-width: none; }
+section.resume-section .resume-item .resume-date {
+    min-width: none; 
+}
 
-    
+
+#module {
+    font-size: 1rem;
+    line-height: 1.5; }
+      
+#cu{
+        max-width: 150px;
+        max-height: 50px; }
+.logo {
+    display: block;
+    position: relative;
+    margin-top: 20px; 
+    width: 180px;
+    height:auto;
+}
